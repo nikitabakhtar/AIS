@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1705598094224" analysisTimestamp="1705598094240" release="">
+  <Project projectName="">
+    <Jar>C:\Users\hp\eclipse-workspace\DebtPayback\bin\DebtCollect\DebtPayback.class</Jar>
+    <AuxClasspathEntry>C:\Users\hp\eclipse-workspace\DebtPayback\lib\Regex.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\hp\eclipse-workspace\DebtPayback\src</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="DebtCollect.DebtPayback">
+      <SourceLine classname="DebtCollect.DebtPayback" start="4" end="14" sourcefile="DebtPayback.java" sourcepath="DebtCollect/DebtPayback.java"/>
+    </Class>
+    <Method classname="DebtCollect.DebtPayback" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DebtCollect.DebtPayback" start="7" end="14" startBytecode="0" endBytecode="84" sourcefile="DebtPayback.java" sourcepath="DebtCollect/DebtPayback.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="566" end="567" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="DebtCollect.DebtPayback" start="7" end="7" startBytecode="7" endBytecode="7" sourcefile="DebtPayback.java" sourcepath="DebtCollect/DebtPayback.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 18 Jan 2024 18:14:54 +0100" total_classes="1" referenced_classes="22" total_bugs="1" total_size="10" num_packages="1" java_version="17.0.9" vm_version="17.0.9+11-LTS-201" cpu_seconds="2.25" clock_seconds="1.69" peak_mbytes="197.96" alloc_mbytes="4014.00" gc_seconds="0.01" priority_1="1">
+    <PackageStats package="DebtCollect" total_bugs="1" total_types="1" total_size="10" priority_1="1">
+      <ClassStats class="DebtCollect.DebtPayback" sourceFile="DebtPayback.java" interface="false" size="10" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="429" invocations="476" avgMicrosecondsPerInvocation="902" maxMicrosecondsPerInvocation="16546" standardDeviationMicrosecondsPerInvocation="1964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="109" invocations="22" avgMicrosecondsPerInvocation="4955" maxMicrosecondsPerInvocation="24343" standardDeviationMicrosecondsPerInvocation="6841"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="102" invocations="478" avgMicrosecondsPerInvocation="215" maxMicrosecondsPerInvocation="5244" standardDeviationMicrosecondsPerInvocation="328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="64" invocations="112" avgMicrosecondsPerInvocation="573" maxMicrosecondsPerInvocation="5043" standardDeviationMicrosecondsPerInvocation="693"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="22" avgMicrosecondsPerInvocation="2892" maxMicrosecondsPerInvocation="15340" standardDeviationMicrosecondsPerInvocation="3678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="47" invocations="439" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="10315" standardDeviationMicrosecondsPerInvocation="537"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="44" invocations="49" avgMicrosecondsPerInvocation="908" maxMicrosecondsPerInvocation="19158" standardDeviationMicrosecondsPerInvocation="2794"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="39" invocations="22" avgMicrosecondsPerInvocation="1802" maxMicrosecondsPerInvocation="29658" standardDeviationMicrosecondsPerInvocation="6101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="37" invocations="22" avgMicrosecondsPerInvocation="1713" maxMicrosecondsPerInvocation="29210" standardDeviationMicrosecondsPerInvocation="6030"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="36" invocations="22" avgMicrosecondsPerInvocation="1661" maxMicrosecondsPerInvocation="14491" standardDeviationMicrosecondsPerInvocation="3034"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

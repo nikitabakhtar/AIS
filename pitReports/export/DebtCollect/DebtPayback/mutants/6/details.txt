@@ -1,0 +1,2 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=monthly_rate, methodDesc=(DD)D], indexes=[24], mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator], filename=DebtPayback.java, block=[1], lineNumber=9, description=changed conditional boundary, testsInOrder=[]]
+le division with multiplication, testsInOrder=[]]

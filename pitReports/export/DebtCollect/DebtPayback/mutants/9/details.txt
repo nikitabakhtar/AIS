@@ -1,0 +1,3 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=number_rate, methodDesc=(D)D], indexes=[6], mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator], filename=DebtPayback.java, block=[0], lineNumber=17, description=changed conditional boundary, testsInOrder=[]]
+ouble addition with subtraction, testsInOrder=[]]
+]

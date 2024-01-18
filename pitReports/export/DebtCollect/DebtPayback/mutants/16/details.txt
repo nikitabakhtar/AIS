@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=amount_, methodDesc=(DDI)D], indexes=[14], mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator], filename=DebtPayback.java, block=[0], lineNumber=25, description=Replaced double addition with subtraction, testsInOrder=[]]

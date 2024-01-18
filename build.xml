@@ -14,23 +14,23 @@
   	<taskdef resource="edu/umd/cs/findbugs/anttask/tasks.properties" classpath="${spotbugs.home}/spotbugs-ant.jar"/>
   
     <path id="JUnit 5.libraryclasspath">
-        <pathelement location="../../.p2/pool/plugins/junit-jupiter-api_5.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-jupiter-engine_5.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-jupiter-migrationsupport_5.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-jupiter-params_5.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-platform-commons_1.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-platform-engine_1.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-platform-launcher_1.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-platform-runner_1.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-platform-suite-api_1.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-platform-suite-engine_1.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-platform-suite-commons_1.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/junit-vintage-engine_5.10.1.jar"/>
-        <pathelement location="../../.p2/pool/plugins/org.opentest4j_1.3.0.jar"/>
-        <pathelement location="../../.p2/pool/plugins/org.apiguardian.api_1.1.2.jar"/>
-        <pathelement location="../../.p2/pool/plugins/org.junit_4.13.2.v20230809-1000.jar"/>
-        <pathelement location="../../.p2/pool/plugins/org.hamcrest_2.2.0.jar"/>
-        <pathelement location="../../.p2/pool/plugins/org.hamcrest.core_2.2.0.v20230809-1000.jar"/>
+        <pathelement location="libary/junit-jupiter-api_5.10.1.jar"/>
+        <pathelement location="library/junit-jupiter-engine_5.10.1.jar"/>
+        <pathelement location="library/junit-jupiter-migrationsupport_5.10.1.jar"/>
+        <pathelement location="library/junit-jupiter-params_5.10.1.jar"/>
+        <pathelement location="library/junit-platform-commons_1.10.1.jar"/>
+        <pathelement location="library/junit-platform-engine_1.10.1.jar"/>
+        <pathelement location="library/junit-platform-launcher_1.10.1.jar"/>
+        <pathelement location="library/junit-platform-runner_1.10.1.jar"/>
+        <pathelement location="library/junit-platform-suite-api_1.10.1.jar"/>
+        <pathelement location="library/junit-platform-suite-engine_1.10.1.jar"/>
+        <pathelement location="library/junit-platform-suite-commons_1.10.1.jar"/>
+        <pathelement location="library/junit-vintage-engine_5.10.1.jar"/>
+        <pathelement location="library/org.opentest4j_1.3.0.jar"/>
+        <pathelement location="library/org.apiguardian.api_1.1.2.jar"/>
+        <pathelement location="library/org.junit_4.13.2.v20230809-1000.jar"/>
+        <pathelement location="library/org.hamcrest_2.2.0.jar"/>
+        <pathelement location="library/org.hamcrest.core_2.2.0.v20230809-1000.jar"/>
     </path>
               	
               	

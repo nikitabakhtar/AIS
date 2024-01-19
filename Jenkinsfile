@@ -16,7 +16,7 @@ pipeline {
         stage('test') {
             steps {
                 
-                bat 'ant DebtPaybackTest'
+                bat 'ant DebtPaybackCalTest'
             }
         }
         stage('mutation') {

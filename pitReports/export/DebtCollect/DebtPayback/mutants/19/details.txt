@@ -1,1 +1,0 @@
-MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=amount_, methodDesc=(DDI)D], indexes=[30], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator], filename=DebtPayback.java, block=[2], lineNumber=31, description=replaced double return with 0.0d for DebtCollect/DebtPayback::amount_, testsInOrder=[]]

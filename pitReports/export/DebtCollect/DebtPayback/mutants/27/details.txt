@@ -1,1 +1,0 @@
-MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=main, methodDesc=([Ljava/lang/String;)V], indexes=[81], mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator], filename=DebtPayback.java, block=[14], lineNumber=49, description=removed call to java/util/Scanner::close, testsInOrder=[]]

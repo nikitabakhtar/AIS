@@ -12,6 +12,8 @@ public class DebtPaybackCalTest {
 		assertEquals(875.0, DebtPaybackCal.calculateMonthlyRate(10000, 5, 12));
 		assertEquals(0.0, DebtPaybackCal.calculateMonthlyRate(0.0, 0.0, 0));
 		assertEquals(0.0, DebtPaybackCal.calculateMonthlyRate(-444.0, 5.0, 0));
+		assertEquals(0.0, DebtPaybackCal.calculateMonthlyRate(-555.0, 5.0, 0));
+		assertEquals(0.0, DebtPaybackCal.calculateMonthlyRate(-545.0, 5.0, 0));
 		
 	}
 	@Test
@@ -20,6 +22,8 @@ public class DebtPaybackCalTest {
 		assertEquals(10500.0, DebtPaybackCal.calculateOverallDebt(10000, 5, 12));
 		assertEquals(0.0, DebtPaybackCal.calculateOverallDebt(0.0, 0.0, 0));
 		assertEquals(0.0, DebtPaybackCal.calculateOverallDebt(-444.0, 5.0, 0));
+		assertEquals(0.0, DebtPaybackCal.calculateMonthlyRate(-555.0, 5.0, 0));
+		assertEquals(0.0, DebtPaybackCal.calculateMonthlyRate(-545.0, -5.0, 0));
 	}
 
 }

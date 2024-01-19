@@ -1,1 +1,0 @@
-MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPaybackTest, method=testMonthly_rate, methodDesc=()V], indexes=[18], mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator], filename=DebtPaybackTest.java, block=[5], lineNumber=13, description=removed call to org/junit/jupiter/api/Assertions::assertEquals, testsInOrder=[]]

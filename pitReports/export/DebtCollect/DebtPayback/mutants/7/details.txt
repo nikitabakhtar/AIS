@@ -1,2 +1,3 @@
-MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=monthly_rate, methodDesc=(DD)D], indexes=[34], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator], filename=DebtPayback.java, block=[3], lineNumber=13, description=replaced double return with 0.0d for DebtCollect/DebtPayback::monthly_rate, testsInOrder=[]]
+MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=main, methodDesc=([Ljava/lang/String;)V], indexes=[84], mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator], filename=DebtPayback.java, block=[13], lineNumber=27, description=removed call to java/io/PrintStream::println, testsInOrder=[]]
+nthly_rate, testsInOrder=[]]
 

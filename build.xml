@@ -10,46 +10,47 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="17"/>
     <property name="source" value="17"/>
-   	<property name="spotbugs.home" value="library/spotbugs-4.8.3/lib"/>
-  	<taskdef resource="edu/umd/cs/findbugs/anttask/tasks.properties" classpath="${spotbugs.home}/spotbugs-ant.jar"/>
-  
+              	
+              	<property name="spotbugs.home" value="library/spotbugs-4.8.3/lib"/>
+              	  	<taskdef resource="edu/umd/cs/findbugs/anttask/tasks.properties" classpath="${spotbugs.home}/spotbugs-ant.jar"/>
+              	  
+              		<path id="pitest.path">
+              		              	  	<pathelement location="library/pitest-1.9.3.jar"/>
+              		              	  	<pathelement location="library/pitest-entry-1.9.3.jar"/>
+              		              	  	<pathelement location="library/pitest-ant-1.9.3.jar"/>
+              		              	  	</path>
+              	    <taskdef name="pitest" classname="org.pitest.ant.PitestTask" classpathref="pitest.path"/>
+              	
+              	
+              	
     <path id="JUnit 5.libraryclasspath">
-        <pathelement location="libary/junit-jupiter-api_5.10.1.jar"/>
-        <pathelement location="library/junit-jupiter-engine_5.10.1.jar"/>
-        <pathelement location="library/junit-jupiter-migrationsupport_5.10.1.jar"/>
-        <pathelement location="library/junit-jupiter-params_5.10.1.jar"/>
-        <pathelement location="library/junit-platform-commons_1.10.1.jar"/>
-        <pathelement location="library/junit-platform-engine_1.10.1.jar"/>
-        <pathelement location="library/junit-platform-launcher_1.10.1.jar"/>
-        <pathelement location="library/junit-platform-runner_1.10.1.jar"/>
-        <pathelement location="library/junit-platform-suite-api_1.10.1.jar"/>
-        <pathelement location="library/junit-platform-suite-engine_1.10.1.jar"/>
-        <pathelement location="library/junit-platform-suite-commons_1.10.1.jar"/>
-        <pathelement location="library/junit-vintage-engine_5.10.1.jar"/>
+        <pathelement location="library/junit-jupiter-api_5.10.0.jar"/>
+        <pathelement location="library/junit-jupiter-engine_5.10.0.jar"/>
+        <pathelement location="library/junit-jupiter-migrationsupport_5.10.0.jar"/>
+        <pathelement location="library/junit-jupiter-params_5.10.0.jar"/>
+        <pathelement location="library/junit-platform-commons_1.10.0.jar"/>
+        <pathelement location="library/junit-platform-engine_1.10.0.jar"/>
+        <pathelement location="library/junit-platform-launcher_1.10.0.jar"/>
+        <pathelement location="library/junit-platform-runner_1.10.0.jar"/>
+        <pathelement location="library/junit-platform-suite-api_1.10.0.jar"/>
+        <pathelement location="library/junit-platform-suite-engine_1.10.0.jar"/>
+        <pathelement location="library/junit-platform-suite-commons_1.10.0.jar"/>
+        <pathelement location="library/junit-vintage-engine_5.10.0.jar"/>
         <pathelement location="library/org.opentest4j_1.3.0.jar"/>
         <pathelement location="library/org.apiguardian.api_1.1.2.jar"/>
         <pathelement location="library/org.junit_4.13.2.v20230809-1000.jar"/>
         <pathelement location="library/org.hamcrest_2.2.0.jar"/>
         <pathelement location="library/org.hamcrest.core_2.2.0.v20230809-1000.jar"/>
     </path>
-              	
-              	
-	<path id="pitest.path">
-              	  	<pathelement location="library/pitest-1.9.3.jar"/>
-              	  	<pathelement location="library/pitest-entry-1.9.3.jar"/>
-              	  	<pathelement location="library/pitest-ant-1.9.3.jar"/>
-              	  	</path>
-    <taskdef name="pitest" classname="org.pitest.ant.PitestTask" classpathref="pitest.path"/>
-                          	
     <path id="DebtPayback.classpath">
         <pathelement location="bin"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
-    <path id="run.DebtPayback.classpath">
+    <path id="run.DebtPaybackCal.classpath">
         <path refid="DebtPayback.classpath"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
-    <path id="run.DebtPaybackTest.classpath">
+    <path id="run.DebtPaybackCalTest.classpath">
         <path refid="DebtPayback.classpath"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
@@ -89,21 +90,20 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="DebtPayback">
-        <java classname="DebtCollect.DebtPayback" failonerror="true" fork="yes">
-            <classpath refid="run.DebtPayback.classpath"/>
+    <target name="DebtPaybackCal">
+        <java classname="DebtCollect.DebtPaybackCal" failonerror="true" fork="yes">
+            <classpath refid="run.DebtPaybackCal.classpath"/>
         </java>
     </target>
-	
-    <target name="DebtPaybackTest">
+    <target name="DebtPaybackCalTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
+            <test name="DebtCollect.DebtPaybackCalTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <classpath refid="run.DebtPaybackTest.classpath"/>
+            <classpath refid="run.DebtPaybackCalTest.classpath"/>
         </junit>
     </target>
-   
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
@@ -112,23 +112,21 @@
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
     </target>
-             
-	<target name="pit" depends="DebtPaybackTest">
-		<path id="mutation.path">
-		<path refid="pitest.path"/>
-		<path refid="run.DebtPaybackTest.classpath"/>
-		</path>
-		<!--  export feature has been activated to write mutants to file  -->
-		<pitest features="+EXPORT" pitClasspath="pitest.path" threads="2" classPath="mutation.path" targetTests="DebtCollect.*" targetClasses="DebtCollect.*" reportDir="pitReports" sourceDir="src"/>
-		
-		</target>
-	          	
-	<target name="spotbugs" depends="build">
-	<spotbugs home="${spotbugs.home}" output="xml" outputFile="bcel-sb.xml">
-	<auxClasspath path="${basedir}/lib/Regex.jar"/>
-	<sourcePath path="${basedir}/src/"/>
-	<class location="${basedir}/bin/DebtCollect/DebtPayback.class"/>
-	</spotbugs>
-	</target>
-              	
+            	<target name="pit" depends="DebtPaybackCalTest">
+            		<path id="mutation.path">
+            		<path refid="pitest.path"/>
+            		<path refid="run.DebtPaybackCalTest.classpath"/>
+            		</path>
+            		<!--  export feature has been activated to write mutants to file  -->
+            		<pitest features="+EXPORT" pitClasspath="pitest.path" threads="2" classPath="mutation.path" targetTests="DebtCollect.*" targetClasses="DebtCollect.*" reportDir="pitReports" sourceDir="src"/>
+            		
+            		</target>
+            	          	
+            	<target name="spotbugs" depends="build">
+            	<spotbugs home="${spotbugs.home}" output="xml" outputFile="bcel-sb.xml">
+            	<auxClasspath path="${basedir}/lib/Regex.jar"/>
+            	<sourcePath path="${basedir}/src/"/>
+            	<class location="${basedir}/bin/DebtCollect/DebtPaybackCal.class"/>
+            	</spotbugs>
+            	</target>
 </project>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="2" hostname="NikitaBakhtar" name="DebtCollect.DebtPaybackTest" skipped="0" tests="2" time="0.1" timestamp="2024-01-19T01:49:53">
+  <properties>
+    <property name="env.SPOTBUGS_HOME" value="C:\Users\hp\Documents\AIS_project-NB\spotbugs-4.8.3" />
+    <property name="ant.library.dir" value="C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\lib" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="12" />
+    <property name="env.USERPROFILE" value="C:\Users\hp" />
+    <property name="java.specification.version" value="17" />
+    <property name="ant.project.name" value="DebtPayback" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DebtCollect.DebtPaybackTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\hp\eclipse-workspace\DebtPayback\junit\TEST-DebtCollect.DebtPaybackTest.xml crashfile=C:\Users\hp\eclipse-workspace\DebtPayback\junitvmwatcher7121790810763974668.properties propsfile=C:\Users\hp\eclipse-workspace\DebtPayback\junit2395837869382022999.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+    <property name="sun.stderr.encoding" value="cp437" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.ANT_CMD_LINE_ARGS" value=" DebtPaybackTest" />
+    <property name="java.version.date" value="2023-10-17" />
+    <property name="java.home" value="C:\Program Files\Java\jdk-17" />
+    <property name="env.RegionCode" value="APJ" />
+    <property name="basedir" value="C:\Users\hp\eclipse-workspace\DebtPayback" />
+    <property name="file.separator" value="\" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env._JAVACMD" value="java.exe" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\hp\AppData\Local" />
+    <property name="env.USERDOMAIN_ROAMINGPROFILE" value="NIKITABAKHTAR" />
+    <property name="env.PROCESSOR_REVISION" value="9a04" />
+    <property name="user.script" value="" />
+    <property name="env.PSModulePath" value="C:\Users\hp\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 154 Stepping 4, GenuineIntel" />
+    <property name="java.runtime.version" value="17.0.9+11-LTS-201" />
+    <property name="user.name" value="hp" />
+    <property name="env.WSLENV" value="WT_SESSION:WT_PROFILE_ID:" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env.DriverData" value="C:\Windows\System32\Drivers\DriverData" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="env.COMPUTERNAME" value="NIKITABAKHTAR" />
+    <property name="env.HOMEPATH" value="\Users\hp" />
+    <property name="env.OnlineServices" value="Online Services" />
+    <property name="env.APPDATA" value="C:\Users\hp\AppData\Roaming" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\" />
+    <property name="java.io.tmpdir" value="C:\Users\hp\AppData\Local\Temp\" />
+    <property name="env.WT_PROFILE_ID" value="{61c54bbd-c2c6-5271-96e7-009a87ff44bf}" />
+    <property name="java.version" value="17.0.9" />
+    <property name="env.WT_SESSION" value="06b46bb1-9a75-4c94-9d7d-5c2d445b6512" />
+    <property name="env.Path" value="C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\bin;C:\Users\hp\Downloads\scc_Windows_x86_64;C:\Users\hp\Documents\AIS_project-NB\spotbugs-4.8.3\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\hp\anaconda3;C:\Users\hp\anaconda3\Library\mingw-w64\bin;C:\Users\hp\anaconda3\Library\usr\bin;C:\Users\hp\anaconda3\Library\bin;C:\Users\hp\anaconda3\Scripts;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\bin;" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="env.TMP" value="C:\Users\hp\AppData\Local\Temp" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type.DebtPayback" value="file" />
+    <property name="ant.home" value="C:\\Users\\hp\\Documents\\AIS_project-NB\\apache-ant-1.10.14" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="native.encoding" value="Cp1252" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.14 compiled on August 16 2023" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\bin;C:\Users\hp\Downloads\scc_Windows_x86_64;C:\Users\hp\Documents\AIS_project-NB\spotbugs-4.8.3\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\hp\anaconda3;C:\Users\hp\anaconda3\Library\mingw-w64\bin;C:\Users\hp\anaconda3\Library\usr\bin;C:\Users\hp\anaconda3\Library\bin;C:\Users\hp\anaconda3\Scripts;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\bin;;." />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.LOGONSERVER" value="\\NIKITABAKHTAR" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="env.ChocolateyInstall" value="C:\ProgramData\chocolatey" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.class.path" value="C:\Users\hp\eclipse-workspace\DebtPayback\bin;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-jupiter-api_5.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-jupiter-engine_5.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-jupiter-migrationsupport_5.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-jupiter-params_5.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-platform-commons_1.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-platform-engine_1.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-platform-launcher_1.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-platform-runner_1.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-platform-suite-api_1.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-platform-suite-engine_1.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-platform-suite-commons_1.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\junit-vintage-engine_5.10.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\org.opentest4j_1.3.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\org.apiguardian.api_1.1.2.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\org.junit_4.13.2.v20230809-1000.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\org.hamcrest_2.2.0.jar;C:\Users\hp\eclipse-workspace\DebtPayback\library\org.hamcrest.core_2.2.0.v20230809-1000.jar;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\lib\ant-launcher.jar;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\lib\ant.jar;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\lib\ant-junit.jar;C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\lib\ant-junit4.jar" />
+    <property name="source" value="17" />
+    <property name="env.ChocolateyLastPathUpdate" value="133311694962491996" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="user.variant" value="" />
+    <property name="spotbugs.home" value="library/spotbugs-4.8.3/lib" />
+    <property name="env.SystemRoot" value="C:\WINDOWS" />
+    <property name="os.name" value="Windows 11" />
+    <property name="java.vm.specification.version" value="17" />
+    <property name="env.IGCCSVC_DB" value="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZIBGlEIiWUa1oxdN98SDmQQAAAACAAAAAAAQZgAAAAEAACAAAACWRBDQgvsfUiM7sZ8tS0clDtQO8vDv1+5TGZOOFTs+BgAAAAAOgAAAAAIAACAAAADWaZGIyPO6AQLTZV/CJfls/fxsmX+tiTFMRkLUE+c5g2AAAADK3sElKU7N0SRKggypYh4qiSJs5ArSiyHZ1ZaizBM2UGA1iWL6t3ZCZ5S3dB9B29XfDKkq786MbMgjbL+UVERKUql1lppcUgQQzmolPKmF0DH1rLOa9TyFHt3LIskdRbhAAAAAMGmD6NNPjEHtNlugn+DLauDFhg6wYTLXEwMk5WZPBz0bdXK1JKwQaIvAwySIa7gU5tt2hBHG0Pih8xf7eh+xgg==" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="IN" />
+    <property name="env.USERDOMAIN" value="NIKITABAKHTAR" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="C:\Users\hp" />
+    <property name="ant.file.DebtPayback" value="C:\Users\hp\eclipse-workspace\DebtPayback\build.xml" />
+    <property name="user.language" value="en" />
+    <property name="env.platformcode" value="KV" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="ant.java.version" value="17" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="env.ANT_HOME" value="C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14" />
+    <property name="env.windir" value="C:\WINDOWS" />
+    <property name="ant.file" value="C:\Users\hp\eclipse-workspace\DebtPayback\build.xml" />
+    <property name="path.separator" value=";" />
+    <property name="env.=C:" value="C:\Users\hp\eclipse-workspace\DebtPayback" />
+    <property name="os.version" value="10.0" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL" />
+    <property name="ant.project.invoked-targets" value="DebtPaybackTest" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.ZES_ENABLE_SYSMAN" value="1" />
+    <property name="ant.core.lib" value="C:\Users\hp\Documents\AIS_project-NB\apache-ant-1.10.14\lib\ant.jar" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="user.dir" value="C:\Users\hp\eclipse-workspace\DebtPayback" />
+    <property name="env.USERNAME" value="hp" />
+    <property name="os.arch" value="amd64" />
+    <property name="target" value="17" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="env.ANT_OPTS" value=" " />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="17.0.9+11-LTS-201" />
+    <property name="env.TEMP" value="C:\Users\hp\AppData\Local\Temp" />
+    <property name="java.class.version" value="61.0" />
+    <property name="env.OneDrive" value="C:\Users\hp\OneDrive" />
+    <property name="ant.project.default-target" value="build" />
+  </properties>
+  <testcase classname="DebtCollect.DebtPaybackTest" name="testOverallDebt" time="0.012">
+    <failure message="expected: &lt;10500.0&gt; but was: &lt;10060.0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected: &lt;10500.0&gt; but was: &lt;10060.0&gt;
+	at DebtCollect.DebtPaybackTest.testOverallDebt(DebtPaybackTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <testcase classname="DebtCollect.DebtPaybackTest" name="testMonthlyRate" time="0.0">
+    <failure message="expected: &lt;875.0&gt; but was: &lt;0.0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected: &lt;875.0&gt; but was: &lt;0.0&gt;
+	at DebtCollect.DebtPaybackTest.testMonthlyRate(DebtPaybackTest.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

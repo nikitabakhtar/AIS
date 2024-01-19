@@ -1,2 +1,2 @@
-MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=monthly_rate, methodDesc=(DD)D], indexes=[24], mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator], filename=DebtPayback.java, block=[1], lineNumber=9, description=negated conditional, testsInOrder=[]]
-eam::println, testsInOrder=[]]
+MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=main, methodDesc=([Ljava/lang/String;)V], indexes=[55], mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator], filename=DebtPayback.java, block=[9], lineNumber=19, description=removed call to java/io/PrintStream::println, testsInOrder=[]]
+

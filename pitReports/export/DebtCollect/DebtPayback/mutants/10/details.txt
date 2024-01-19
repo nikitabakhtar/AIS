@@ -1,3 +1,3 @@
-MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=number_rate, methodDesc=(D)D], indexes=[16], mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator], filename=DebtPayback.java, block=[2], lineNumber=21, description=Replaced double division with multiplication, testsInOrder=[]]
-ed negation, testsInOrder=[]]
+MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPayback, method=calculateMonthlyintrst, methodDesc=(D)D], indexes=[5], mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator], filename=DebtPayback.java, block=[0], lineNumber=33, description=Replaced double division with multiplication, testsInOrder=[]]
+n, testsInOrder=[]]
  testsInOrder=[]]

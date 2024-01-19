@@ -1,0 +1,1 @@
+MutationDetails [id=MutationIdentifier [location=Location [clazz=DebtCollect.DebtPaybackCal, method=calculateMonthlyRate, methodDesc=(DDI)D], indexes=[8], mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator], filename=DebtPaybackCal.java, block=[0], lineNumber=37, description=removed call to java/io/PrintStream::println, testsInOrder=[]]

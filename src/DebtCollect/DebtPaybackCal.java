@@ -34,7 +34,6 @@ public class DebtPaybackCal {
 
     // Function to calculate the monthly rate
     public static double calculateMonthlyRate(double db, double intrst, int dbdur) {
-    	System.out.println("\nLoan Details:"+ db+ intrst+dbdur);
         double monthlyintrst = calculateMonthlyintrst(intrst);
         return (db / dbdur) + monthlyintrst;
     }

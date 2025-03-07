@@ -34,10 +34,6 @@ This project focuses on **Architecture of Information Systems (AIS)**, exploring
    ```sh
    [Add command to start the system, e.g., python main.py / npm start]
    ```
-2. Access the system at:
-   ```sh
-   [Provide URL or instructions to interact with the system]
-   ```
 
 ## 🤝 Contribution Guidelines
 - Fork the repository
@@ -46,8 +42,7 @@ This project focuses on **Architecture of Information Systems (AIS)**, exploring
 - Push to your branch and submit a Pull Request
 
 ## 📩 Contact
-For any queries, reach out to **[Your Name]** at [your-email@example.com] or connect on [LinkedIn](https://linkedin.com/in/your-profile).
+For any queries, reach out to Nikita Bakhtar at [nikibakhtar.com] or connect on [LinkedIn](https://linkedin.com/in/nikitabakhtar).
 
 ---
 🔗 **GitHub Repository:** [AIS](https://github.com/nikitabakhtar/AIS)
-

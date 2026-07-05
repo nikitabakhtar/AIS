@@ -1,0 +1,4 @@
+library/** linguist-vendored
+bin/** linguist-generated
+.settings/** linguist-generated
+*.class linguist-generated

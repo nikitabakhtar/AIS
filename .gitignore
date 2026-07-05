@@ -1,0 +1,17 @@
+# Java compiled files
+*.class
+bin/
+
+# Test and report outputs
+junit/
+pitReports/
+bcel-sb.xml
+
+# IDE files
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
